@@ -41,8 +41,11 @@ class _BallState extends State<Ball> {
     return Container(
       child: Center(
         child: Expanded(
-          child: Image(
-            image: AssetImage('images/ball1.png'),
+          child: TextButton(
+            onPressed: () {
+              print('I got pressed');
+            },
+            child: Image.asset('images/ball1.png'),
           ),
         ),
       ),
